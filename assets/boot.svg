@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 310" width="900" height="310" role="img" aria-label="A terminal window booting SHARVAN.OS: mounting curiosity, loading perception modules, attaching the voice interface, then idling at a ready prompt.">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C0A16"/>
+      <stop offset="1" stop-color="#070610"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="0.6" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.08" cy="0" r="0.75">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      text { white-space: pre; font-family: "JetBrains Mono", "SFMono-Regular", "Cascadia Code", Consolas, "DejaVu Sans Mono", monospace; }
+      .dim { fill: #6E6B92; }
+      .w   { fill: #E8E7F3; }
+      .vio { fill: #A78BFA; }
+      .cy  { fill: #22D3EE; }
+      .ok  { fill: #34D399; }
+      .row { opacity: 0; animation: pop .34s cubic-bezier(.2,.8,.2,1) forwards; }
+      @keyframes pop { from { opacity: 0; transform: translateX(-7px); } to { opacity: 1; transform: translateX(0); } }
+      .d0 { animation-delay: .15s } .d1 { animation-delay: .55s } .d2 { animation-delay: .95s }
+      .d3 { animation-delay: 1.35s } .d4 { animation-delay: 1.75s } .d5 { animation-delay: 2.15s }
+      .d6 { animation-delay: 2.55s } .d7 { animation-delay: 4.30s } .d8 { animation-delay: 4.70s }
+      .cur { animation: blink 1.05s steps(1, end) infinite; }
+      @keyframes blink { 50% { opacity: 0 } }
+      .scan { animation: sweep 7s linear infinite; }
+      @keyframes sweep { 0% { opacity: 0; transform: translateY(0) } 8% { opacity: .5 } 92% { opacity: .5 } 100% { opacity: 0; transform: translateY(268px) } }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="308" rx="14" fill="url(#bgGrad)" stroke="#231C3D"/>
+  <rect x="1" y="1" width="898" height="308" rx="14" fill="url(#glow)"/>
+
+  <!-- title bar -->
+  <path d="M1 15a14 14 0 0 1 14-14h870a14 14 0 0 1 14 14v23H1z" fill="#110E1F"/>
+  <line x1="1" y1="38" x2="899" y2="38" stroke="#231C3D"/>
+  <circle cx="24" cy="20" r="5" fill="#F87171"/>
+  <circle cx="44" cy="20" r="5" fill="#FBBF24"/>
+  <circle cx="64" cy="20" r="5" fill="#34D399"/>
+  <text x="88" y="24" font-size="12" class="dim">sharvan@sharvan-os</text>
+  <text x="240" y="24" font-size="12" class="vio">~/boot</text>
+  <text x="840" y="24" font-size="12" class="dim">tty1</text>
+
+  <!-- scanline -->
+  <rect class="scan" x="2" y="40" width="896" height="2" fill="#8B5CF6" opacity="0"/>
+
+  <!-- boot log -->
+  <text class="row d0" x="28" y="70" font-size="13.5"><tspan class="dim">[ 0.000 ] </tspan><tspan class="vio">SHARVAN.OS 2.0</tspan><tspan class="dim"> · violet build · kernel </tspan><tspan class="cy">vision-6.1-cuda</tspan></text>
+  <text class="row d1" x="28" y="94" font-size="13.5"><tspan class="dim">[ 0.142 ] </tspan><tspan class="w">mounting /dev/curiosity</tspan><tspan class="dim"> ....................... </tspan><tspan class="ok">ok</tspan></text>
+  <text class="row d2" x="28" y="118" font-size="13.5"><tspan class="dim">[ 0.311 ] </tspan><tspan class="w">loading perception modules (yolo, bytetrack)</tspan><tspan class="dim"> .... </tspan><tspan class="ok">ok</tspan></text>
+  <text class="row d3" x="28" y="142" font-size="13.5"><tspan class="dim">[ 0.498 ] </tspan><tspan class="w">reconstructing a 4d scene from one coffee</tspan><tspan class="dim"> ....... </tspan><tspan class="ok">ok</tspan></text>
+  <text class="row d4" x="28" y="166" font-size="13.5"><tspan class="dim">[ 0.664 ] </tspan><tspan class="w">attaching voice interface /dev/freakyyy</tspan><tspan class="dim"> ......... </tspan><tspan class="ok">ok</tspan></text>
+  <text class="row d5" x="28" y="190" font-size="13.5"><tspan class="dim">[ 0.902 ] </tspan><tspan class="w">starting experiment daemon</tspan><tspan class="dim"> .................... </tspan><tspan class="ok">ok</tspan></text>
+
+  <!-- progress -->
+  <text class="row d6" x="28" y="228" font-size="12.5"><tspan class="dim">init userspace</tspan></text>
+  <g class="row d6">
+    <rect x="150" y="219" width="620" height="9" rx="4.5" fill="#1A1630"/>
+    <rect x="150" y="219" width="0" height="9" rx="4.5" fill="url(#barGrad)">
+      <animate attributeName="width" from="0" to="620" dur="1.5s" begin="2.7s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    </rect>
+  </g>
+  <text class="row d7 ok" x="790" y="228" font-size="12.5">100%</text>
+
+  <!-- prompt -->
+  <text class="row d8" x="28" y="272" font-size="13.5"><tspan class="ok">➜</tspan><tspan class="dim">  ~ </tspan><tspan class="vio">sharvan</tspan><tspan class="w">@</tspan><tspan class="cy">sharvan-os</tspan><tspan class="dim"> $ </tspan><tspan class="w">build --something-useful</tspan><tspan class="vio cur"> █</tspan></text>
+</svg>

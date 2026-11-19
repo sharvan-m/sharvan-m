@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 338" width="900" height="338" role="img" aria-label="A process monitor panel titled kernel modules, showing animated load bars for computer vision and tracking, 3D and 4D reconstruction, deep learning, backend and APIs, interfaces and viewers, and on-device agents.">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C0A16"/>
+      <stop offset="1" stop-color="#070610"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="glow2" cx="0.95" cy="0" r="0.8">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      text { white-space: pre; font-family: "JetBrains Mono", "SFMono-Regular", "Cascadia Code", Consolas, "DejaVu Sans Mono", monospace; }
+      .dim { fill: #6E6B92 } .lab { fill: #CFCCE8 } .vio { fill: #A78BFA } .cy { fill: #22D3EE }
+      .r { opacity: 0; animation: fade .4s ease forwards }
+      @keyframes fade { to { opacity: 1 } }
+      .k0 { animation-delay: .1s } .k1 { animation-delay: .25s } .k2 { animation-delay: .4s }
+      .k3 { animation-delay: .55s } .k4 { animation-delay: .7s } .k5 { animation-delay: .85s } .k6 { animation-delay: 1.5s }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="336" rx="14" fill="url(#bg2)" stroke="#231C3D"/>
+  <rect x="1" y="1" width="898" height="336" rx="14" fill="url(#glow2)"/>
+
+  <path d="M1 15a14 14 0 0 1 14-14h870a14 14 0 0 1 14 14v23H1z" fill="#110E1F"/>
+  <line x1="1" y1="38" x2="899" y2="38" stroke="#231C3D"/>
+  <circle cx="24" cy="20" r="5" fill="#F87171"/>
+  <circle cx="44" cy="20" r="5" fill="#FBBF24"/>
+  <circle cx="64" cy="20" r="5" fill="#34D399"/>
+  <text x="88" y="24" font-size="12" class="dim">sharvan@sharvan-os</text>
+  <text x="240" y="24" font-size="12" class="vio">~/proc/modules</text>
+
+  <text x="28" y="66" font-size="13" class="cy">KERNEL MODULES</text>
+  <text x="166" y="66" font-size="12" class="dim">load = where the hours actually go</text>
+
+  <!-- row 1 -->
+  <g class="r k0">
+    <text x="28" y="104" font-size="13" class="lab">computer vision · tracking</text>
+    <rect x="300" y="95" width="500" height="10" rx="5" fill="#17142A"/>
+    <rect x="300" y="95" width="0" height="10" rx="5" fill="url(#g2)">
+      <animate attributeName="width" from="0" to="460" dur="1.3s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    </rect>
+    <text x="818" y="104" font-size="12" class="dim">92</text>
+  </g>
+
+  <!-- row 2 -->
+  <g class="r k1">
+    <text x="28" y="144" font-size="13" class="lab">3d / 4d reconstruction</text>
+    <rect x="300" y="135" width="500" height="10" rx="5" fill="#17142A"/>
+    <rect x="300" y="135" width="0" height="10" rx="5" fill="url(#g2)">
+      <animate attributeName="width" from="0" to="390" dur="1.3s" begin="0.45s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    </rect>
+    <text x="818" y="144" font-size="12" class="dim">78</text>
+  </g>
+
+  <!-- row 3 -->
+  <g class="r k2">
+    <text x="28" y="184" font-size="13" class="lab">deep learning · training</text>
+    <rect x="300" y="175" width="500" height="10" rx="5" fill="#17142A"/>
+    <rect x="300" y="175" width="0" height="10" rx="5" fill="url(#g2)">
+      <animate attributeName="width" from="0" to="425" dur="1.3s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    </rect>
+    <text x="818" y="184" font-size="12" class="dim">85</text>
+  </g>
+
+  <!-- row 4 -->
+  <g class="r k3">
+    <text x="28" y="224" font-size="13" class="lab">backend · apis · data</text>
+    <rect x="300" y="215" width="500" height="10" rx="5" fill="#17142A"/>
+    <rect x="300" y="215" width="0" height="10" rx="5" fill="url(#g2)">
+      <animate attributeName="width" from="0" to="350" dur="1.3s" begin="0.75s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    </rect>
+    <text x="818" y="224" font-size="12" class="dim">70</text>
+  </g>
+
+  <!-- row 5 -->
+  <g class="r k4">
+    <text x="28" y="264" font-size="13" class="lab">interfaces · webgl viewers</text>
+    <rect x="300" y="255" width="500" height="10" rx="5" fill="#17142A"/>
+    <rect x="300" y="255" width="0" height="10" rx="5" fill="url(#g2)">
+      <animate attributeName="width" from="0" to="310" dur="1.3s" begin="0.9s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    </rect>
+    <text x="818" y="264" font-size="12" class="dim">62</text>
+  </g>
+
+  <!-- row 6 -->
+  <g class="r k5">
+    <text x="28" y="304" font-size="13" class="lab">on-device agents · voice</text>
+    <rect x="300" y="295" width="500" height="10" rx="5" fill="#17142A"/>
+    <rect x="300" y="295" width="0" height="10" rx="5" fill="url(#g2)">
+      <animate attributeName="width" from="0" to="330" dur="1.3s" begin="1.05s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+    </rect>
+    <text x="818" y="304" font-size="12" class="dim">66</text>
+  </g>
+</svg>
